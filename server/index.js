@@ -1,6 +1,6 @@
 const express = require('./middleware/express')
 const app = require('./middleware/next')
-const { port, appRoot, ip,env} = require('../config')
+const { port, appRoot, ip,env} = require('./config')
 const routes = require('./router');
 
 app.prepare().then(() => {

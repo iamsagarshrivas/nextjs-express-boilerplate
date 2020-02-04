@@ -7,6 +7,8 @@ router.get('/', (req, res) => {
 })
 
 router.get('/public', (req, res) => {
+	console.log('in public route');
+	
 	return app.render(req, res, '/app/public', req.query)
 })
 
