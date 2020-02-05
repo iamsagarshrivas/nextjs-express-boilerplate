@@ -1,0 +1,51 @@
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: #000;
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+}
+.loading span {
+	color: white;
+	text-transform: uppercase;
+}
+.ldsDualRing {
+  display: inline;
+}
+
+.ldsDualRing:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px 0;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: ldsDualRing 1.2s linear infinite;
+}
+
+@keyframes ldsDualRing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
