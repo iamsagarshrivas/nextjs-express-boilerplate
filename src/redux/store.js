@@ -7,7 +7,7 @@ import reducers from './reducers';
 const store = createStore(
     reducers,
     {},
-    applyMiddleware(thunk)//.withExtraArgument(axios))
+    applyMiddleware(thunk)
   );
 
 export default store;
