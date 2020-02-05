@@ -1,9 +1,10 @@
-import classes from './Header.module.scss'
 function index() {
 	return (
-		<div className={classes.heading}>
-			.
-		</div>
+		<nav className="navbar navbar-light bg-dark">
+			<a className="navbar-brand text-white" href="#">
+				Home
+  			</a>
+		</nav>
 	)
 }
 

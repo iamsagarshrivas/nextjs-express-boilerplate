@@ -5,6 +5,7 @@ import '../assets/styles/index.scss'
 import { Provider } from 'react-redux'
 import store from '../redux/store'
 import Loader from '../components/Loader'
+import Header from '../components/Header'
 export default class MyApp extends App {
 	static async getInitialProps({ Component, ctx }) {
 		let pageProps = {}
@@ -26,6 +27,7 @@ export default class MyApp extends App {
 				</Head>
 				<Provider store={store}>
 					<Loader />
+					<Header />
 					<Component {...pageProps} />
 				</Provider>
 			</>
